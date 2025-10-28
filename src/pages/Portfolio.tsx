@@ -123,16 +123,7 @@ const Portfolio = () => {
   }];
   const achievements = [{
     category: "Innovation Leadership",
-    metrics: [{
-      value: "5",
-      label: "Innovation Labs"
-    }, {
-      value: "15+",
-      label: "Patents Filed"
-    }, {
-      value: "3",
-      label: "Industry Awards"
-    }]
+    description: "Pioneering transformative innovation initiatives across technology, agritech, and education sectors. Spearheading the establishment of Centers of Excellence that drive breakthrough research and development. Leading cross-functional teams to conceptualize, develop, and launch cutting-edge products that address critical market needs. Fostering a culture of innovation through strategic partnerships with industry leaders, academic institutions, and research organizations. Driving patent development and intellectual property creation that positions organizations at the forefront of technological advancement."
   }, {
     category: "Startup Mentorship",
     metrics: [{
@@ -381,12 +372,16 @@ const Portfolio = () => {
                   <CardTitle className="text-xl mb-6">{achievement.category}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-3 gap-4">
-                    {achievement.metrics.map((metric, idx) => <div key={idx} className="text-center">
-                        <div className="text-3xl font-bold gradient-text mb-1">{metric.value}</div>
-                        <div className="text-sm text-muted-foreground">{metric.label}</div>
-                      </div>)}
-                  </div>
+                  {'description' in achievement ? (
+                    <p className="text-sm text-muted-foreground leading-relaxed">{achievement.description}</p>
+                  ) : (
+                    <div className="grid grid-cols-3 gap-4">
+                      {achievement.metrics.map((metric, idx) => <div key={idx} className="text-center">
+                          <div className="text-3xl font-bold gradient-text mb-1">{metric.value}</div>
+                          <div className="text-sm text-muted-foreground">{metric.label}</div>
+                        </div>)}
+                    </div>
+                  )}
                 </CardContent>
               </Card>)}
           </div>
