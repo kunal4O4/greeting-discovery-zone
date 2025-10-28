@@ -145,46 +145,6 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card">
-                  <Zap className="w-4 h-4 text-accent" />
-                  <span className="text-sm font-medium">Visionary Leader • Innovator • Mentor</span>
-                </div>
-                <h1 className="text-5xl md:text-6xl font-bold">
-                  Meet <span className="gradient-text">Ravi Rautela</span>
-                </h1>
-                <p className="text-xl text-muted-foreground">
-                  A passionate innovator with 25+ years of experience in driving transformation across 
-                  technology, agriculture, and education sectors. Dedicated to empowering startups, 
-                  mentoring youth, and creating sustainable solutions.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <Button size="lg" className="bg-gradient-primary hover:shadow-primary group">
-                    Connect With Me
-                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <Button size="lg" variant="outline">Download Resume</Button>
-                </div>
-              </div>
-              
-              <div className="relative animate-fade-in">
-                <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
-                <img 
-                  src={sirPortrait} 
-                  alt="Ravi Rautela" 
-                  className="relative rounded-2xl shadow-2xl w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Achievements Stats */}
       <section className="py-20 bg-gradient-subtle">
