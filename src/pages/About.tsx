@@ -182,32 +182,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Achievements Stats */}
-      <section className="py-20 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="gradient-text mb-4">Impact & Achievements</h2>
-            <p className="text-lg text-muted-foreground">
-              Measurable outcomes from years of dedication and hard work
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {achievements.map((achievement, index) => (
-              <Card key={index} className="hover-lift text-center">
-                <CardHeader>
-                  <div className="text-4xl font-bold gradient-text mb-2">{achievement.number}</div>
-                  <CardTitle className="text-lg">{achievement.label}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{achievement.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Professional Journey */}
       <section className="py-20">
         <div className="container mx-auto px-4">
