@@ -126,40 +126,13 @@ const Portfolio = () => {
     description: "Pioneering transformative innovation initiatives across technology, agritech, and education sectors. Spearheading the establishment of Centers of Excellence that drive breakthrough research and development. Leading cross-functional teams to conceptualize, develop, and launch cutting-edge products that address critical market needs. Fostering a culture of innovation through strategic partnerships with industry leaders, academic institutions, and research organizations. Driving patent development and intellectual property creation that positions organizations at the forefront of technological advancement."
   }, {
     category: "Startup Mentorship",
-    metrics: [{
-      value: "100+",
-      label: "Startups"
-    }, {
-      value: "$50M+",
-      label: "Funding Raised"
-    }, {
-      value: "80%",
-      label: "Success Rate"
-    }]
+    description: "Empowering entrepreneurs through comprehensive mentorship programs that span ideation, validation, funding, and scaling phases. Providing strategic guidance on business model development, market entry strategies, and sustainable growth frameworks. Facilitating connections with investors, industry experts, and strategic partners to accelerate startup success. Conducting workshops and bootcamps focused on lean startup methodologies, customer development, and product-market fit. Building a thriving ecosystem of successful entrepreneurs who continue to drive innovation and create meaningful impact across diverse industries."
   }, {
     category: "Agritech Innovation",
-    metrics: [{
-      value: "1000+",
-      label: "Farms"
-    }, {
-      value: "40%",
-      label: "Yield Increase"
-    }, {
-      value: "60%",
-      label: "Water Savings"
-    }]
+    description: "Revolutionizing agricultural practices through IoT-enabled smart farming solutions that optimize resource utilization and maximize productivity. Developing precision agriculture systems that leverage data analytics, sensor networks, and automation to empower farmers with actionable insights. Creating sustainable farming frameworks that significantly reduce water consumption while improving crop yields through intelligent irrigation and soil management. Implementing farmer empowerment programs that provide training, technology access, and market linkages to enhance livelihoods and promote agricultural sustainability."
   }, {
     category: "Business Growth",
-    metrics: [{
-      value: "300%",
-      label: "Revenue Growth"
-    }, {
-      value: "8",
-      label: "New Markets"
-    }, {
-      value: "$25M+",
-      label: "Revenue Generated"
-    }]
+    description: "Driving exponential business growth through strategic market expansion, operational excellence, and innovative go-to-market strategies. Leading digital transformation initiatives that modernize business operations and unlock new revenue streams. Building high-performing teams and establishing robust processes that enable scalable growth across multiple markets. Forging strategic partnerships and client relationships that create long-term value and competitive advantages. Implementing data-driven decision-making frameworks that optimize resource allocation and maximize return on investment."
   }];
   const awards = [{
     title: "Innovation Excellence Award",
@@ -372,16 +345,7 @@ const Portfolio = () => {
                   <CardTitle className="text-xl mb-6">{achievement.category}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  {'description' in achievement ? (
-                    <p className="text-sm text-muted-foreground leading-relaxed">{achievement.description}</p>
-                  ) : (
-                    <div className="grid grid-cols-3 gap-4">
-                      {achievement.metrics.map((metric, idx) => <div key={idx} className="text-center">
-                          <div className="text-3xl font-bold gradient-text mb-1">{metric.value}</div>
-                          <div className="text-sm text-muted-foreground">{metric.label}</div>
-                        </div>)}
-                    </div>
-                  )}
+                  <p className="text-sm text-muted-foreground leading-relaxed">{achievement.description}</p>
                 </CardContent>
               </Card>)}
           </div>
