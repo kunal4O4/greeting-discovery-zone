@@ -55,19 +55,6 @@ const LearningPathPage = () => {
               transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/60 dark:bg-card/60 backdrop-blur-md border border-primary/20 shadow-sm"
             >
-              <motion.span
-                animate={{
-                  rotate: [0, 10, -10, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="text-xl"
-              >
-                🌱
-              </motion.span>
               <span className="text-sm font-semibold text-foreground/80">
                 Interactive Knowledge Garden • Explore, Grow, and Bloom
               </span>
@@ -85,36 +72,6 @@ const LearningPathPage = () => {
                   Plant Your Learning Path
                 </span>
               </h1>
-              
-              <motion.div
-                className="flex items-center justify-center gap-3 pt-2"
-                animate={{
-                  y: [0, -5, 0],
-                }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              >
-                {["🌱", "🌿", "🌳", "🌸"].map((emoji, i) => (
-                  <motion.span
-                    key={i}
-                    className="text-4xl md:text-5xl"
-                    animate={{
-                      scale: [1, 1.15, 1],
-                      opacity: [0.7, 1, 0.7],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: i * 0.3,
-                    }}
-                  >
-                    {emoji}
-                  </motion.span>
-                ))}
-              </motion.div>
             </motion.div>
 
             {/* Subtitle with inspiring copy */}
@@ -137,35 +94,10 @@ const LearningPathPage = () => {
                 <p className="text-base md:text-lg text-muted-foreground flex items-center gap-2">
                   <span className="text-xl">✨</span>
                   Find your seed of curiosity — your future is waiting to bloom
-                  <span className="text-xl">🌿</span>
                 </p>
               </motion.div>
             </motion.div>
 
-            {/* Growth path indicator */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 }}
-              className="pt-6 flex items-center justify-center gap-2"
-            >
-              {["🌱", "→", "🌿", "→", "🌳", "→", "🌺"].map((item, i) => (
-                <motion.span
-                  key={i}
-                  className={`${item === "→" ? "text-muted-foreground/50 text-xl" : "text-2xl md:text-3xl"}`}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    delay: 1 + i * 0.1,
-                    type: "spring",
-                    stiffness: 180,
-                  }}
-                  whileHover={{ scale: item !== "→" ? 1.2 : 1 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </motion.div>
 
             {/* Scroll indicator */}
             <motion.div
