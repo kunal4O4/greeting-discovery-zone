@@ -191,23 +191,23 @@ export const DomainNode = ({ domain, isSelected, isHidden, onClick }: DomainNode
             </motion.div>
           )}
 
-          {/* Main Seed Body - realistic brown seed design */}
+          {/* Main Seed Body - realistic seed design with teardrop shape */}
           <motion.div
-            className="relative w-32 h-40 overflow-hidden"
+            className="relative w-28 h-36 overflow-hidden"
             style={{
-              background: "linear-gradient(135deg, #A86832 0%, #C48650 50%, #A86832 100%)",
-              borderRadius: "50% 50% 48% 52% / 60% 60% 40% 40%",
+              background: "linear-gradient(135deg, #8B6F47 0%, #B8956A 50%, #8B6F47 100%)",
+              borderRadius: "50% 50% 50% 50% / 60% 60% 70% 30%",
               boxShadow: `
                 0 10px 20px rgba(0,0,0,0.2),
-                inset -4px -4px 12px rgba(110, 62, 30, 0.6),
-                inset 4px 4px 12px rgba(200, 134, 80, 0.4)
+                inset -4px -4px 12px rgba(90, 70, 45, 0.6),
+                inset 4px 4px 12px rgba(184, 149, 106, 0.4)
               `,
             }}
             whileHover={{
               boxShadow: `
                 0 14px 28px rgba(0,0,0,0.25),
-                inset -4px -4px 12px rgba(110, 62, 30, 0.6),
-                inset 4px 4px 12px rgba(200, 134, 80, 0.4),
+                inset -4px -4px 12px rgba(90, 70, 45, 0.6),
+                inset 4px 4px 12px rgba(184, 149, 106, 0.4),
                 0 0 30px ${accentColor}50
               `,
             }}
@@ -233,7 +233,7 @@ export const DomainNode = ({ domain, isSelected, isHidden, onClick }: DomainNode
             <div 
               className="absolute inset-0 opacity-30"
               style={{
-                background: "radial-gradient(ellipse at 20% 20%, transparent 40%, rgba(110, 62, 30, 0.4) 100%)",
+                background: "radial-gradient(ellipse at 20% 20%, transparent 40%, rgba(90, 70, 45, 0.4) 100%)",
               }}
             />
 
