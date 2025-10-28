@@ -152,10 +152,6 @@ const AboutPage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 animate-fade-in-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card">
-                  <Zap className="w-4 h-4 text-accent" />
-                  <span className="text-sm font-medium">Visionary Leader • Innovator • Mentor</span>
-                </div>
                 <h1 className="text-5xl md:text-6xl font-bold">
                   Meet <span className="gradient-text">Ravi Rautela</span>
                 </h1>
